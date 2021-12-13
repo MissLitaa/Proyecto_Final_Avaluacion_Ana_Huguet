@@ -9,7 +9,7 @@ public class RotateObject : MonoBehaviour
     private float grados = 45f;
    
     
-
+    /*
     // Start is called before the first frame update
     void Start()
     {
@@ -27,4 +27,5 @@ public class RotateObject : MonoBehaviour
         rotationAspas = new Vector3(grados, 0, 0);
         transform.rotation *= Quaternion.Euler(rotationAspas);
     }
+    */
 }
