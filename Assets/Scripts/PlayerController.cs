@@ -10,7 +10,7 @@ public class PlayerController : MonoBehaviour
     private float horizontalAxis;
     private float verticalAxis;
 
-    private float generalLimit;
+    private float generalLimit = 200;
 
     // Update is called once per frame
     private void Start()
@@ -31,26 +31,38 @@ public class PlayerController : MonoBehaviour
         transform.Rotate(Vector3.up, chopperTurnSpeed * Time.deltaTime * horizontalAxis);
         transform.Rotate(Vector3.left, chopperTurnSpeed * Time.deltaTime * verticalAxis);
 
-        /*Límite rotación horizontal.
+        //Límite eje Z.
 
-        if (transform.rotation.z < generalLimit )
+        if (transform.position.z >= generalLimit )
         {
-            transform.rotation *= Quaternion.Euler(0, generalLimit, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y, generalLimit);
         }
-        else
+        if (transform.position.z <= -generalLimit)
         {
-            transform.rotation *= Quaternion.Euler(0, -generalLimit, 0);
+            transform.position = new Vector3(transform.position.x, transform.position.y, -generalLimit);
         }
 
-        //Límite rotación horizontal.
 
-        if (transform.rotation.x < generalLimit)
+        //Límite Y.
+
+        if (transform.position.y >= generalLimit)
         {
-            transform.rotation *= Quaternion.Euler(generalLimit, 0, 0);
+            transform.position = new Vector3(transform.position.x, generalLimit, transform.position.z);
         }
-        else
+        if (transform.position.y <= 0)
         {
-            transform.rotation *= Quaternion.Euler(-generalLimit, 0, 0);
-        }*/
+            transform.position = new Vector3(transform.position.x, 0, transform.position.z);
+        }
+
+        //Límite X.
+
+        if (transform.position.x >= generalLimit)
+        {
+            transform.position = new Vector3(generalLimit, transform.position.y, transform.position.z);
+        }
+        if (transform.position.x <= -generalLimit)
+        {
+            transform.position = new Vector3(-generalLimit, transform.position.y, transform.position.z);
+        }
     }
 }
