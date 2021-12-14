@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class RotateObject : MonoBehaviour
 {
-    public Vector3 rotationAspas;
-    private float grados = 90f;
+    private Vector3 rotationAspas;
+    private float grados = 360f;
+    private float gradosCoin = 90f;
 
    
     // Start is called before the first frame update
@@ -17,7 +18,15 @@ public class RotateObject : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(Vector3.up, grados * Time.deltaTime, Space.Self);
+        if(gameObject.CompareTag("Aspa"))
+        { 
+            transform.Rotate(Vector3.up, grados * Time.deltaTime, Space.Self);
+        }
+
+        if (gameObject.CompareTag("Coin"))
+        {
+            transform.Rotate(Vector3.up, gradosCoin * Time.deltaTime, Space.Self);
+        }
     }
 
     

@@ -9,16 +9,19 @@ public class PlayerController : MonoBehaviour
 
     private float horizontalAxis;
     private float verticalAxis;
-
-    private float generalLimit = 200;
+    private Vector3 initialPos = new Vector3(0, 100, 0);
+     private float generalLimit = 200;
 
     // Update is called once per frame
     private void Start()
     {
-        
+        //Posición inicial
+        transform.position = initialPos;
     }
     void Update()
     {
+        
+
         //Acceso a los ejes.
         horizontalAxis = Input.GetAxis("Horizontal");
         verticalAxis = Input.GetAxis("Vertical");
