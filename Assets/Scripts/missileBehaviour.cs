@@ -5,14 +5,7 @@ using UnityEngine;
 public class missileBehaviour : MonoBehaviour
 {
     private float missileSpeed = 50f;
-    public AudioSource missileSource;
-    public AudioClip missileASExplosion;
-
-
-    private void Start()
-    {
-        missileSource = GetComponent<AudioSource>();
-    }
+   
     void Update()
     {
         //Movimiento hacia adelante.
@@ -20,15 +13,4 @@ public class missileBehaviour : MonoBehaviour
 
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (gameObject.CompareTag("Barrel"))
-        {
-            missileSource.PlayOneShot(missileASExplosion, 1f);
-            Destroy(other.gameObject);
-        }
-
-      
-
-    }
 }

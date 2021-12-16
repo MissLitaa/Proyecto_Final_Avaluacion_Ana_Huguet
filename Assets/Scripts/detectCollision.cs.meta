@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 3334d945596288c4f901c4fa4ed89759
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - effectAS: {instanceID: 0}
+  - coinAC: {fileID: 8300000, guid: 3180ccb40f37d51409369cd5d7ba37bf, type: 3}
+  - explosionAC: {fileID: 8300000, guid: 6e5193556e212d44ca1b3d4aece17902, type: 3}
+  - coinCollect: {fileID: 2971537532891774549, guid: 94b47d81bf40f6540a0f8467e2b829b4, type: 3}
+  - barrelCollision: {fileID: 7110083894898259303, guid: 861b63eda50252342b488259d46da3ae, type: 3}
+  - playerCollision: {fileID: 8514684516882995675, guid: 1a04929cf70782142a1b2e1796fdf860, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

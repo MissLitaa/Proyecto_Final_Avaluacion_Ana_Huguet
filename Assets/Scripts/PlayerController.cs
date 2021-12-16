@@ -17,10 +17,7 @@ public class PlayerController : MonoBehaviour
     private float missileOffsetValue = -0.5f;
 
     public AudioSource playerAS;
-    public AudioClip coinAC;
-
-    public GameObject coinCollect;
-
+  
     // Update is called once per frame
     private void Start()
     {
@@ -90,12 +87,5 @@ public class PlayerController : MonoBehaviour
         }
     }
 
-    private void OnTriggerEnter(Collider other)
-    {
-        if (gameObject.CompareTag("Coin"))
-        {
-            playerAS.PlayOneShot(coinAC, 1f);
-            Destroy(coinCollect);
-        }
-    }
+    
 }

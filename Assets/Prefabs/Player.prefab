@@ -1944,6 +1944,7 @@ GameObject:
   - component: {fileID: 7430503677157160269}
   - component: {fileID: 351408520}
   - component: {fileID: 2942671128126436976}
+  - component: {fileID: -5675763776966933628}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -1994,8 +1995,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   missilePrefab: {fileID: 7240466478037722610, guid: 6a8d98acd3d690c4190626c21b1f5c00, type: 3}
   playerAS: {fileID: 351408520}
-  coinAC: {fileID: 8300000, guid: 3180ccb40f37d51409369cd5d7ba37bf, type: 3}
-  coinCollect: {fileID: 2971537532891774549, guid: 94b47d81bf40f6540a0f8467e2b829b4, type: 3}
 --- !u!82 &351408520
 AudioSource:
   m_ObjectHideFlags: 0
@@ -2100,8 +2099,20 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8514684516882995675}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1.8410263, z: 4.9349794}
   m_Center: {x: 0, y: -0.1307768, z: -0.8973255}
+--- !u!114 &-5675763776966933628
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8514684516882995675}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e18a7ddb6081e948aa9b5e0b2aeaa69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
