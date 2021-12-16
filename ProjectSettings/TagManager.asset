@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Coin
   - Aspa
+  - Barrel
+  - Missile
   layers:
   - Default
   - TransparentFX
