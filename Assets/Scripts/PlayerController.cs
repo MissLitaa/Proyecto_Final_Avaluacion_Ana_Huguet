@@ -14,10 +14,13 @@ public class PlayerController : MonoBehaviour
 
     public GameObject missilePrefab;
     private Vector3 missileOffset;
-    private float missileOffsetValue = -0.5f;
+    private float missileOffsetValue = -2f;
 
     public AudioSource playerAS;
-  
+    public AudioClip explosionBarrel;
+    public AudioClip explosionChopper;
+    public AudioClip coinCollect;
+
     // Update is called once per frame
     private void Start()
     {
@@ -29,10 +32,12 @@ public class PlayerController : MonoBehaviour
 
         //Accedemos a los componentes de Player.
         playerAS = GetComponent<AudioSource>();
+
+        
     }
     void Update()
     {
-        
+       
         //Acceso a los ejes.
         horizontalAxis = Input.GetAxis("Horizontal");
         verticalAxis = Input.GetAxis("Vertical");
@@ -85,7 +90,9 @@ public class PlayerController : MonoBehaviour
         {
             Instantiate(missilePrefab, transform.position + missileOffset, transform.rotation);
         }
+
+     
     }
 
-    
+
 }

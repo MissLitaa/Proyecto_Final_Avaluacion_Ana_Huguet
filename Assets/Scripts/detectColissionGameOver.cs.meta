@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 38fb40a576a87d84181dc5f1fcf13e56
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - barrelSource: {fileID: -6395457223148213433, guid: 861b63eda50252342b488259d46da3ae, type: 3}
+  - explosionAC: {fileID: 8300000, guid: 811849004ecf6974bad7ce4aad0541f0, type: 3}
+  - missileASExplosion: {fileID: 8300000, guid: 6e5193556e212d44ca1b3d4aece17902, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

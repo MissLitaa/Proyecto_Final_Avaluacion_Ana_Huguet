@@ -5,7 +5,10 @@ MonoImporter:
   serializedVersion: 2
   defaultReferences:
   - missilePrefab: {fileID: 7240466478037722610, guid: 6a8d98acd3d690c4190626c21b1f5c00, type: 3}
-  - playerAS: {instanceID: 0}
+  - playerAS: {fileID: 351408520, guid: 1a04929cf70782142a1b2e1796fdf860, type: 3}
+  - explosionBarrel: {fileID: 8300000, guid: 811849004ecf6974bad7ce4aad0541f0, type: 3}
+  - explosionChopper: {fileID: 8300000, guid: 74fd5f999f140034ea6be811cc34713d, type: 3}
+  - coinCollect: {fileID: 8300000, guid: 3180ccb40f37d51409369cd5d7ba37bf, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

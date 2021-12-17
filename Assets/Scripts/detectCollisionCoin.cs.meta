@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 3334d945596288c4f901c4fa4ed89759
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - effectAS: {fileID: -8956301014976553554, guid: 94b47d81bf40f6540a0f8467e2b829b4, type: 3}
+  - coinAC: {fileID: 8300000, guid: 3180ccb40f37d51409369cd5d7ba37bf, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
