@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    private float chopperSpeed = 10f;
+    private float chopperSpeed = 35f;
     private float chopperTurnSpeed = 30f;
 
     private float horizontalAxis;

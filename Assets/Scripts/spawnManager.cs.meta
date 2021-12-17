@@ -3,7 +3,9 @@ guid: 40db3a45dfd022f408d7897e5ea25046
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - spawnCoin: {fileID: 2971537532891774549, guid: 94b47d81bf40f6540a0f8467e2b829b4, type: 3}
+  - spawnBarrel: {fileID: 7110083894898259303, guid: 861b63eda50252342b488259d46da3ae, type: 3}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

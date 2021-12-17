@@ -17,10 +17,12 @@ public class spawnManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        InvokeRepeating("SpawnRandomPlace", time:1, repeatRate:10f);
+        InvokeRepeating("SpawnRandomCoin", time:1, repeatRate:10f);
+        InvokeRepeating("SpawnRandomBarrel", time:1, repeatRate:10f);
     }
 
-    public void SpawnRandomPlace()
+
+    public void SpawnRandomCoin()
     {
         //Posición completamente aleatoria.
         randomX = Random.Range(-limitDome, limitDome);
@@ -29,7 +31,18 @@ public class spawnManager : MonoBehaviour
         spawnPosition = new Vector3(randomX, randomY, randomZ);
 
         Instantiate(spawnCoin, spawnPosition, spawnCoin.transform.rotation);
-        Instantiate(spawnBarrel, spawnPosition, spawnCoin.transform.rotation);
+        
+    }
+
+    public void SpawnRandomBarrel()
+    {
+        //Posición completamente aleatoria.
+        randomX = Random.Range(-limitDome, limitDome);
+        randomY = Random.Range(limitDome2, limitDome);
+        randomZ = Random.Range(-limitDome, limitDome);
+        spawnPosition = new Vector3(randomX, randomY, randomZ);
+
+        Instantiate(spawnBarrel, spawnPosition, spawnBarrel.transform.rotation);
 
     }
 }

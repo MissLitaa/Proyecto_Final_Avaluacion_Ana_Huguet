@@ -1,14 +1,17 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class detectColissionGameOver : MonoBehaviour
 {
     private PlayerController playerControllerScript;
     private deathSounds explodingChopper;
+    public TextMeshProUGUI gameOverText;
 
     private void Start()
     {
+        gameOverText.gameObject.SetActive(false);
         playerControllerScript = GameObject.Find("Player").GetComponent<PlayerController>();
         explodingChopper = GameObject.Find("DeathSound").GetComponent<deathSounds>();
     }
@@ -21,6 +24,9 @@ public class detectColissionGameOver : MonoBehaviour
            Destroy(gameObject); 
            Destroy(otherTrigger);
            explodingChopper.deathExplosionAS.PlayOneShot(explodingChopper.explosion, 0.2f);
+           Time.timeScale = 0;
+           gameOverText.gameObject.SetActive(true);
+
         }
 
     }

@@ -8,6 +8,7 @@ TagManager:
   - Aspa
   - Barrel
   - Missile
+  - Environment
   layers:
   - Default
   - TransparentFX
