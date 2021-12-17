@@ -16,7 +16,7 @@ public class detectCollisionCoin : MonoBehaviour
         {
             playerControllerScript.playerAS.PlayOneShot(playerControllerScript.coinCollect, 1f);
             Debug.Log("Hit detected");
-            Destroy(GameObject.Find("Coin"));
+            Destroy(otherTrigger.gameObject);
         }
 
     }
